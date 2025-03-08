@@ -1,0 +1,208 @@
+@font-face {
+    font-family: "win98-bold";
+    src: url("fonts/win98-bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "win98";
+    src: url("fonts/win98-regular.woff2") format("woff2");
+}
+
+body {
+    background-color: #008080;
+}
+
+.dialog_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    width: 788px;
+    height: 361px;
+    min-width: 332px;
+    min-height: 128px;
+    padding: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+
+    background: #C3C3C3;
+    box-shadow: -2px -2px 0px 0px #000 inset, 
+        2px 2px 0px 0px #DBDBDB inset, 
+        -4px -4px 0px 0px #808080 inset, 
+        4px 4px 0px 0px #FFF inset;
+}
+
+.ribbon {
+    display: flex;
+    height: 48px;
+    padding: 4px 5px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+    align-self: stretch;
+
+    background: linear-gradient(90deg, #00007B 0%, #1085D2 100%);
+}
+
+.text_title {
+    color: #ffffff;
+    font-family: "win98-bold";
+    align-self: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    padding-left: 8px;
+}
+
+.navigation_buttons {
+    width: 147px;
+    height: 40px;
+    display: flex;
+    gap: 4px;
+    align-self: center;
+}
+
+.minimize_maximize {
+    display: flex;
+    width: 95px;
+    height: 40px;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.navigation_btn {
+    width: 44px;
+    height: 40px;
+    flex-shrink: 0;
+
+    background-color: #C3C3C3;
+    box-shadow: -2px -2px 0px 0px #000 inset, 
+    2px 2px 0px 0px #DBDBDB inset, 
+    -4px -4px 0px 0px #808080 inset, 
+    4px 4px 0px 0px #FFF inset;
+}
+
+.navigation_btn:active {
+    box-shadow: -2px -2px 0px 0px #FFF inset, 
+    2px 2px 0px 0px #808080 inset, 
+    -4px -4px 0px 0px #DBDBDB inset, 
+    4px 4px 0px 0px #000 inset;
+}
+
+.content {
+    width: 788px;
+    height: 361px;
+    
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+
+    margin-top: 39px;
+    margin-left: 24px;
+}
+
+#pcontainer {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 37px;
+    margin-left: 12px;
+}
+
+#p1 {
+    display: flex;
+    width: 310px;
+    height: 32px;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    color: #000;
+    font-family: "win98";
+    font-size: 32px;
+    letter-spacing: 1.6px;
+
+    margin-bottom: 8px;
+}
+#p2 {
+    display: flex;
+    width: 411px;
+    height: 48px;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    color: #000;
+    font-family: "win98-bold";
+    font-size: 48px;
+    letter-spacing: 2.4px;
+    margin-bottom: 16px;
+}
+#p3 {
+    display: flex;
+    width: 370px;
+    height: 32px;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    color: #000;
+    font-family: "win98";
+    font-size: 32px;
+    letter-spacing: 1.6px;
+}
+
+.btns {
+    display: flex;
+    gap: 9px;
+    width: 739px;
+    height: 64px;
+    flex-shrink: 0;
+}
+
+.btn {
+    display: flex;
+    width: fit-content;
+    height: auto;
+    min-width: 152px;
+    padding: 14px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+    background: #C3C3C3;
+    box-shadow: -2px -2px 0px 0px #000 inset, 
+    2px 2px 0px 0px #DBDBDB inset, 
+    -4px -4px 0px 0px #808080 inset, 
+    4px 4px 0px 0px #FFF inset;
+}
+
+.btn:hover {
+    outline: 2px solid #000;
+    outline-offset: -10px;
+    outline-style: dotted;
+}
+
+.btn:active {
+    box-shadow: -2px -2px 0px 0px #FFF inset, 
+    2px 2px 0px 0px #808080 inset, 
+    -4px -4px 0px 0px #DBDBDB inset, 
+    4px 4px 0px 0px #000 inset;
+}
+
+.btn_text {
+    color: #000;
+    text-align: center;
+    font-family: "win98-bold";
+    font-size: 32px;
+    letter-spacing: 1.6px;
+}
+
+
